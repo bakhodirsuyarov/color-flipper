@@ -4,7 +4,9 @@ const elColor = document.querySelector('.js-color');
 
 elBtn.addEventListener('click', function(){
   const randomNumber = getRandomNumber();
+
   document.body.style.backgroundColor = colors[randomNumber];
+  elColor.textContent = colors[randomNumber];
 });
 
 function getRandomNumber() {
